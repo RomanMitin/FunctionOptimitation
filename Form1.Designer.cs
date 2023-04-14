@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.AtextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,14 +54,14 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.ParamTextBox2 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.ParamTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.ParamTextBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@
             this.AtextBox.Name = "AtextBox";
             this.AtextBox.Size = new System.Drawing.Size(45, 26);
             this.AtextBox.TabIndex = 1;
-            this.AtextBox.Text = "0.5";
+            this.AtextBox.Text = "2";
             this.AtextBox.Validated += new System.EventHandler(this.AtextBox_Validated);
             // 
             // label2
@@ -142,7 +142,7 @@
             this.BtextBox.Name = "BtextBox";
             this.BtextBox.Size = new System.Drawing.Size(50, 26);
             this.BtextBox.TabIndex = 6;
-            this.BtextBox.Text = "1.0";
+            this.BtextBox.Text = "3";
             this.BtextBox.Validated += new System.EventHandler(this.BtextBox_Validated);
             // 
             // label5
@@ -192,7 +192,7 @@
             this.bTextBox2.Name = "bTextBox2";
             this.bTextBox2.Size = new System.Drawing.Size(45, 26);
             this.bTextBox2.TabIndex = 12;
-            this.bTextBox2.Text = "3.14159";
+            this.bTextBox2.Text = "8";
             this.bTextBox2.Validated += new System.EventHandler(this.bTextBox2_Validated);
             // 
             // label7
@@ -207,16 +207,16 @@
             // 
             // FuncChart
             // 
-            chartArea5.Name = "ChartArea1";
-            this.FuncChart.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.FuncChart.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.FuncChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.FuncChart.Legends.Add(legend1);
             this.FuncChart.Location = new System.Drawing.Point(279, 76);
             this.FuncChart.Name = "FuncChart";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.FuncChart.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.FuncChart.Series.Add(series1);
             this.FuncChart.Size = new System.Drawing.Size(737, 343);
             this.FuncChart.TabIndex = 13;
             this.FuncChart.Text = "chart1";
@@ -313,6 +313,16 @@
             this.tabPage1.Text = "Scanning";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(3, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(169, 26);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "No param in this metod";
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.ParamTextBox);
@@ -324,57 +334,6 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Piyavski";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.ParamTextBox2);
-            this.tabPage5.Controls.Add(this.label11);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(184, 36);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Strongin";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 207);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Choose metod:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(3, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(169, 26);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "No param in this metod";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 6);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 20);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "r = ";
-            // 
-            // ParamTextBox2
-            // 
-            this.ParamTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ParamTextBox2.Location = new System.Drawing.Point(32, 3);
-            this.ParamTextBox2.Name = "ParamTextBox2";
-            this.ParamTextBox2.Size = new System.Drawing.Size(82, 26);
-            this.ParamTextBox2.TabIndex = 1;
-            this.ParamTextBox2.Text = "10";
-            this.ParamTextBox2.Validated += new System.EventHandler(this.ParamTextBox2_Validated);
             // 
             // ParamTextBox
             // 
@@ -395,6 +354,47 @@
             this.label12.Size = new System.Drawing.Size(39, 20);
             this.label12.TabIndex = 20;
             this.label12.Text = "m = ";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.ParamTextBox2);
+            this.tabPage5.Controls.Add(this.label11);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(184, 36);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Strongin";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // ParamTextBox2
+            // 
+            this.ParamTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ParamTextBox2.Location = new System.Drawing.Point(32, 3);
+            this.ParamTextBox2.Name = "ParamTextBox2";
+            this.ParamTextBox2.Size = new System.Drawing.Size(82, 26);
+            this.ParamTextBox2.TabIndex = 1;
+            this.ParamTextBox2.Text = "2";
+            this.ParamTextBox2.Validated += new System.EventHandler(this.ParamTextBox2_Validated);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(3, 6);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 20);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "r = ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(13, 207);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Choose metod:";
             // 
             // label13
             // 

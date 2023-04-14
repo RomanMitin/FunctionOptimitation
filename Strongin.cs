@@ -13,8 +13,8 @@ namespace FunctionOptimitation
 
         private static double get_r(Point_t point_t1, Point_t point_t2)
         {
-            double result = 0.5 * m * (point_t2.x - point_t1.x) +
-                (Math.Pow(point_t2.y - point_t1.y, 2)) / (2 * m * (point_t2.x - point_t1.x)) -
+            double result = m * (point_t2.x - point_t1.x) +
+                (Math.Pow(point_t2.y - point_t1.y, 2)) / (m * (point_t2.x - point_t1.x)) -
                 2.0 * (point_t2.y + point_t1.y);
             return result;
         }
@@ -94,6 +94,12 @@ namespace FunctionOptimitation
             {
                 double cur_M = Math.Abs(iter.Current.y - prev.Current.y) / 
                     (iter.Current.x - prev.Current.x);
+
+                if(cur_M < 0)
+                {
+                    throw new Exception();
+                }
+
                 result = Math.Max(cur_M, result);
                 prev = iter;
                 iter.MoveNext();
